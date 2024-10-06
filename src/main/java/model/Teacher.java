@@ -18,4 +18,44 @@ public class Teacher {
 
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL)
     private List<Courses> courses;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getQuaification() {
+        return quaification;
+    }
+
+    public void setQuaification(String quaification) {
+        this.quaification = quaification;
+    }
+
+    public EQualification getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(EQualification qualification) {
+        this.qualification = qualification;
+    }
+
+    public List<Courses> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Courses> courses) {
+        this.courses = courses;
+    }
 }
